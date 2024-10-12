@@ -1,0 +1,389 @@
+/* Add fonts */
+.plus-jakarta-sans-normal {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.allan-regular {
+    font-family: "Allan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.allan-bold {
+    font-family: "Allan", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/* Layout setting */
+
+body {
+    margin: 0;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+p, h4, li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.gridContainer {
+    display: grid;
+    margin: 0;
+    grid-template-rows: 90px auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+        "content"
+        "footer";
+
+}
+
+.mainMenu {
+    grid-area: header;
+    background-color: #4e148c;
+    margin: 0;
+}
+
+.content {
+    grid-area: content;
+    background-color: #d8dcff;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+/* Navigation Menu */
+
+.mainMenu.container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 60px;
+    margin: 0;
+}
+
+.mainMenu.logo {
+    padding-right: 25px;
+    margin: 0;
+}
+
+.mainMenu.logo svg {
+    width: 90px;
+    height: 90px;
+}
+
+.mainMenu.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 60px;
+    flex-grow: 1;
+}
+
+.mainMenu.links h3 {
+    width: 259.25px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: background-color 0.1s ease, color 0.3s ease;
+}
+
+.mainMenu.links h3:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* Content */
+
+/* Highlights */
+.content.highlights {
+    background-color: #4e148c;
+    display: flex;
+    flex-direction: row;
+    padding: 0 60px;
+}
+
+.highlight.myAvatar {
+    position: relative;
+    width: 700px;
+    height: 700px;
+
+    margin-left: calc(100% - 60px - 60px - 753.48px - 700px);
+}
+
+.image {
+    position: absolute;
+    height: 100%;
+    right: 60px;
+}
+
+
+.highlight.text {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 753.48px;
+}
+
+.highlight.text h1 {
+    font-size: 128px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text.frontend,
+.text.seo,
+.text.analyst {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+
+.text i {
+    transform: rotate(270deg);
+}
+
+.text.frontend:hover,
+.text.seo:hover,
+.text.analyst:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: overlay;
+    padding-left: 50px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Experiences */
+
+
+.experiences {
+    background-color: white;
+
+}
+
+
+.content.experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences.sliderbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.experiences.SEO-marketing {
+    flex: 1;
+}
+
+#arrow-left, #arrow-right {
+    position: absolute;
+}
+
+#arrow-left {
+    right: 20px
+}
+
+#arrow-right {
+    left: 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Group 8 */
+
+.floating.contactus {
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.floating.rectangle7 {
+    width: 120px;
+    height: 120px;
+    background: #AEADF0;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+}
+
+.floating.rectangle7:hover {
+    cursor: pointer;
+    background-color: rgb(78, 20, 140, 0.7);
+    background-blend-mode: overlay;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.material-icons.email {
+    color: white;
+    font-size: 48px;
+}
+
+
+/* Rectangle 9 */
+
+.floating.linksContainer {
+    width: 93px;
+    height: 350px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin-right: 20px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear; 
+}
+
+
+.floating.linksContainer img, .floating.linksContainer svg {
+    width: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.floating.linksContainer img:hover, .floating.linksContainer svg:hover {
+    cursor: pointer;
+}
+
