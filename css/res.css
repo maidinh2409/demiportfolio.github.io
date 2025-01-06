@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+	.seo-slide-tab-r-item > div
+	{
+		font-size:18px;
+		width:95%
+	}
+	.form-c
+	{
+		width: 75%;
+	}
+	.header-l
+	{
+		text-align: center;
+	}
+	.slide-tab-l,.slide-tab-r{width: 100%}
+	.topskill-1
+	{
+		padding: 5px 40px;
+	}
+	.topskill-1-1
+	{
+		position: absolute;
+		top: 20px;
+		left: 40%;
+	}
+	.topskill-1-2
+	{
+		position: absolute;
+		top: 55px;
+		left: 2%;
+	}
+	.topskill-1-3
+	{
+		position: absolute;
+		top: 90px;
+		left: 51%;
+	}
+	.topskill-1-4
+	{
+		position: absolute;
+		top: 125px;
+		left: 12%;
+	}
+	.topskill-1-5
+	{
+		position: absolute;
+		top: 160px;
+		left: 47%;
+	}
+	.topskill-1-6
+	{
+		position: absolute;
+		top: 195px;
+		left: 0%;
+	}
+	.topskill-1-7
+	{
+		position: absolute;
+		top: 236px;
+		left: 11%;
+	}
+	.topskill-1-8
+	{
+		position: absolute;
+		top: 240px;
+		left: 65%;
+	}
+	.banner-data-analyst h1, .banner-data-seo h1
+	{
+		font-size: 50px;
+	}
+	.seo-slide-tab-r
+	{
+		width: 100%;
+	}
+}
+@media (max-width: 576px) {
+	body{font-size: 14px}
+	.section-2-title
+	{
+		font-size: 50px;
+	}
+	.banner-l h1{    font-size: 70px;}
+	    .topskill-1 {
+        padding: 5px 20px;}
+    .topskill-1-5 {       
+        left: 46%;
+    }
+    .section-1-c{padding: 0 5px}
+}
