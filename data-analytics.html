@@ -28,7 +28,7 @@
 				</div>
 				<div class="col header-r">
 					<ul class="menu">
-						<li><a href="">About Me</a></li>
+						<li><a href="index.html">About Me</a></li>
 						<li><a href="seo.html">SEO</a></li>
 						<li><a href="data-analytics.html">Data Analytics</a></li>
 					</ul>
@@ -39,17 +39,21 @@
 	<div class="banner-data-analyst container-fluid">
 		<h1 class="fontphu">Data Analyst/Data Scientist</h1>
 	</div>
+
 	<div class="section-c container">
 		<div class="row">
-			<div class="col-12 col-md-6 d-flex align-items-center p-3 p-md-5">
-				<div onclick="showViz()">
-					<img src="img/about-1.svg" style="cursor: pointer;">
+
+			<div class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center p-0">
+				<div class="w-100 h-100">
+					<img src="img/Gym-structure-1080x675.png" class="w-100 h-100">
 				</div>
 			</div>
-			<div class="col-12 col-md-6 mau2 d-flex align-items-center p-3 p-md-5">
+
+			<div class="col-12 col-md-6 mau1 d-flex align-items-center p-3 p-md-5">
 				<div>
-					<h3 class="h2 fontphu">Gym Check-ins and User Metadata</h3>
-					<p>Dataset: Gym Check-ins and User Metadata Source:
+					<h3 class="h2 fontphu"><span style="font-weight: bold;">Gym Check-ins and User Metadata</span></h3>
+					<p></p>
+					<p>Dataset: Gym Check-ins and User Metadata:
 						<a class="alink" href="https://www.kaggle.com/datasets/mexwell/gym-check-ins-and-user-metadata">
 							https://www.kaggle.com/datasets/mexwell/gym-check-ins-and-user-metadata
 						</a>
@@ -60,80 +64,73 @@
 						analysis and visualization purposes. The focus was on performing various analyses and creating
 						insights based on the gym check-in data.</p>
 					<p>Tools used: MySQL, Tableau</p>
-					<div class="topskill-1 mt-5"><a href="#">Github</a></div>
+					<div class="topskills-container mt-5">
+						<div class="topskill-1"><a href="https://github.com/maidinh2409/Gym-Check-ins-and-User-Metadata">Github</a></div>
+						<div class="topskill-1" onclick="showViz()">Show Report</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div id="vizModal" class="viz-modal">
+				<div class="viz-modal-content">
+					<span class="viz-close" onclick="closeViz()">&times;</span>
+					<div class='tableauPlaceholder' id='viz1736238340258'><noscript><a href='#'><img alt='Dashboard 1 '
+									src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gy&#47;Gym_Sales_User_Analysis_Report&#47;Dashboard1&#47;1_rss.png'
+									style='border: none' /></a></noscript><object class='tableauViz'
+							style='display:none;'>
+							<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+							<param name='embed_code_version' value='3' />
+							<param name='site_root' value='' />
+							<param name='name' value='Gym_Sales_User_Analysis_Report&#47;Dashboard1' />
+							<param name='tabs' value='no' />
+							<param name='toolbar' value='yes' />
+							<param name='static_image'
+								value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gy&#47;Gym_Sales_User_Analysis_Report&#47;Dashboard1&#47;1.png' />
+							<param name='animate_transition' value='yes' />
+							<param name='display_static_image' value='yes' />
+							<param name='display_spinner' value='yes' />
+							<param name='display_overlay' value='yes' />
+							<param name='display_count' value='yes' />
+							<param name='language' value='en-US' />
+						</object></div>
+					<script
+						type='text/javascript'>                    var divElement = document.getElementById('viz1736238340258'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '1000px'; vizElement.style.height = '827px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 				</div>
 			</div>
 		</div>
 
-		<!-- Modal -->
-		<div id="vizModal" class="viz-modal">
-			<div class="viz-modal-content">
-				<span class="viz-close" onclick="closeViz()">&times;</span>
-				<div class='tableauPlaceholder' id='viz1736214612154' style='position: relative'><noscript><a
-							href='#'><img alt='Dashboard 1 '
-								src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gy&#47;Gym_Sales_User_Analysis_Report&#47;Dashboard1&#47;1_rss.png'
-								style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
-						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-						<param name='embed_code_version' value='3' />
-						<param name='site_root' value='' />
-						<param name='name' value='Gym_Sales_User_Analysis_Report&#47;Dashboard1' />
-						<param name='tabs' value='no' />
-						<param name='toolbar' value='yes' />
-						<param name='static_image'
-							value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Gy&#47;Gym_Sales_User_Analysis_Report&#47;Dashboard1&#47;1.png' />
-						<param name='animate_transition' value='yes' />
-						<param name='display_static_image' value='yes' />
-						<param name='display_spinner' value='yes' />
-						<param name='display_overlay' value='yes' />
-						<param name='display_count' value='yes' />
-						<param name='language' value='en-US' />
-					</object></div>
-				<script type='text/javascript'>
-					var divElement = document.getElementById('viz1736214612154');
-					var vizElement = divElement.getElementsByTagName('object')[0];
-
-					// Đặt kích thước cố định cho viz
-					vizElement.style.width = '1000px';  // Chiều rộng cố định
-					vizElement.style.height = '827px';  // Chiều cao cố định
-					
-
-					divElement.style.width = '1000px';  // Chiều rộng cố định
-					divElement.style.height = '827px';  // Chiều cao cố định
-
-					var scriptElement = document.createElement('script');
-					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-					vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-				</script>
-			</div>
-		</div>
 
 
 		<div class="row">
 
-			<div class="col-12 col-md-6 order-1 order-md-0 mau2 d-flex align-items-center p-3 p-md-5">
-				<div>
-					<h3 class="h2 fontphu">Gym Check-ins and User Metadata</h3>
-					<p>Dataset: Gym Check-ins and User Metadata
-						Source: <a class="alink"
-							href="https://www.kaggle.com/datasets/mexwell/gym-check-ins-and-user-metadata">https://www.kaggle.com/datasets/mexwell/gym-check-ins-and-user-metadata
-						</a></p>
-
-					<p>Overview: This dataset contains information on user check-ins at different gym locations, along
-						with related user metadata. The data is relatively clean and was used to practice building data
-						models, standardizing fields, and extracting and querying information across multiple tables for
-						analysis and visualization purposes. The focus was on performing various analyses and creating
-						insights based on the gym check-in data.</p>
-
-					<p>Tools used: MySQL, Tableau</p>
-					<div class="topskill-1 mt-5"><a href="#"> Github </a></div>
-
+			<div class="col-12 col-md-6 order-1 order-md-2 d-flex align-items-center p-0" onclick="showViz()">
+				<div class="w-100 h-100">
+					<img src="img/625b10a58137b364b18df2ea_iStock-94179607.jpg" class="w-100 h-100">
 				</div>
 			</div>
-			<div class="col-12 col-md-6 order-0 order-md-1 d-flex align-items-center p-5">
+
+			<div class="col-12 col-md-6 mau2 d-flex align-items-center p-3 p-md-5">
 				<div>
-					<img src="img/about-1.svg">
+					<h3 class="h2 fontphu"><span style="font-weight: bold;">Real Estate Sales 2001-2023</span></h3>
+					<p></p>
+					<p>Dataset: Real Estate Sales 2001-2023:
+						<a class="alink" href="https://catalog.data.gov/dataset/real-estate-sales-2001-2018">
+							https://catalog.data.gov/dataset/real-estate-sales-2001-2018
+						</a>
+					</p>
+					<p>Overview: This dataset, sourced from data.gov, contains over 1 million rows of real estate sales
+						data spanning 21 years. It was utilized to clean and transform data using pandas, addressing
+						null values, resolving inconsistencies, and detecting outliers through statistical analysis and
+						visualization. Exploratory Data Analysis (EDA) was conducted using Matplotlib and Seaborn to
+						plot and analyze distributions, patterns, and trends, yielding insights based on metrics and
+						distribution theory.</p>
+					<p>Tools used: Python</p>
+					<div class="topskill-1 mt-5"><a href="https://github.com/maidinh2409/Real-Estate-Sales-Analysis">Github</a></div>
 				</div>
 			</div>
+
+			
 		</div>
 	</div>
 	<footer class="py-5">
@@ -168,21 +165,14 @@
 			});
 		});
 
-
 		function showViz() {
-			document.getElementById("vizModal").style.display = "block";
+			var modal = document.getElementById("vizModal");
+			modal.style.display = "block";
 		}
 
 		function closeViz() {
-			document.getElementById("vizModal").style.display = "none";
-		}
-
-		// Đóng modal khi nhấn ra ngoài modal
-		window.onclick = function (event) {
-			const modal = document.getElementById("vizModal");
-			if (event.target === modal) {
-				modal.style.display = "none";
-			}
+			var modal = document.getElementById("vizModal");
+			modal.style.display = "none";
 		}
 	</script>
 </body>
