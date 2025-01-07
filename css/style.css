@@ -18,10 +18,6 @@
 	background-color: white;
 }
 
-.mau1 {
-	background: var(--mau1)
-}
-
 .mau2{
 	background: var(--mau2);
 }
@@ -60,69 +56,41 @@ header
 
 /* Modal background */
 .viz-modal {
-    display: none; /* Ẩn modal mặc định */
+    display: none;
     position: fixed;
-    top: 0;
+    z-index: 1000;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Màu nền mờ */
-    z-index: 9999;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Modal content */
 .viz-modal-content {
-    position: relative;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1040px; /* Hoặc chiều rộng cố định nếu muốn */
-	height: 897px;
-    background: white;
+    background-color: #fff;
+    margin: 10% auto;
     padding: 20px;
-	padding-top: 50px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
 }
 
+/* Close button */
 .viz-close {
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bold;
     color: #000;
     cursor: pointer;
 }
 
-
-
-.topskills-container {
-    display: flex; /* Sắp xếp các phần tử con theo hàng ngang */
-    gap: 20px; /* Khoảng cách giữa các phần tử */
-    justify-content: flex-start; /* Căn trái (tuỳ chỉnh: center, space-between, etc.) */
-    align-items: center; /* Căn giữa theo chiều dọc */
-}
-
-.topskill-1 {
-    padding: 10px 15px; /* Thêm khoảng cách bên trong */
-    background-color: #f5f5f5; /* Màu nền nhạt */
-    border-radius: 5px; /* Bo góc */
-    text-align: center; /* Căn giữa nội dung */
-    cursor: pointer; /* Con trỏ trỏ tay khi hover */
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
-}
-
-.topskill-1:hover {
-    background-color: black; /* Đổi màu nền khi hover */
-	color: white;
-}
-
-.topskill-1 a {
-    text-decoration: none; /* Bỏ gạch chân liên kết */
-    color: #000; /* Màu chữ đen (tuỳ chỉnh) */
-    font-weight: bold; /* Chữ đậm */
-}
-
+  
 
 
 header a
