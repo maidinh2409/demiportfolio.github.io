@@ -24,3 +24,5 @@ summary,.text-link{font-size:14px}
 .sample-cta{font-size:14px;font-weight:700;color:var(--purple)}
 .sample-note{margin-top:18px;font-size:13px;color:var(--muted)}
 @media(max-width:700px){.intro{font-size:17px}.website-sample-grid{grid-template-columns:1fr}.website-sample{padding:22px}.actions{flex-wrap:wrap}.hero-note{font-size:12px}}
+
+@media(min-width:1001px){.projects>.project:last-child:nth-child(odd){grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;column-gap:30px;align-items:start}.projects>.project:last-child:nth-child(odd)>.project-image{grid-column:1;grid-row:1 / 5;height:100%;min-height:310px}.projects>.project:last-child:nth-child(odd)>:not(.project-image){grid-column:2}.projects>.project:last-child:nth-child(odd)>.project-heading{margin-top:0}}
